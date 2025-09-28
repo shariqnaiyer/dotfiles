@@ -1,0 +1,54 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Ja KooLit - Default
+
+* All main themes or configs are located in ~/.config/rofi/themes/
+* If you want to edit the config, that is where you should edit NOT here
+
+* To load a new theme, manually edit the file path below or choose desired theme via rofi theme selector (choose via app menu)
+
+* Alternative way to Load (preferred) own cooked by Ja
+* SUPER CTRL R - Choose style & SUPER CTRL SHIFT R
+
+* TIPS
+* If you have edited a config, rename it with a unique name. During update, the contents of
+* ~/.config/rofi/themes/ will be replaced. */
+
+/* ---- Global Configuration ---- */
+configuration {
+  modi: "drun,run,calc,window";
+  show-icons: true;
+  icon-theme: "Adwaita";
+  display-drun: "";
+  display-run: "";
+  display-calc: "";
+  display-window: "";
+  drun-display-format: "{name}";
+  window-format: "{t}";
+  font: "JetBrainsMono Nerd Font 13";
+  case-sensitive: false;
+  cycle: true;
+  filter: "";
+  separator-style: "none";
+  hide-scrollbar: true;
+  fullscreen: false;
+  fake-transparency: false;
+  scroll-method: 0;
+  window-format: "[{w}] {c} {t}";
+  click-to-exit: true;
+  show-match: true;
+  max-history-size: 25;
+  combi-hide-mode-prefix: false;
+  matching: "fuzzy";
+  tokenize: true;
+}
+
+/* ---- Global Configuration Fonts ---- */
+@import "~/.config/rofi/0-shared-fonts.rasi"
+
+/* note: Main themes in ~/.config/rofi/themes */
+/* You can manually change here or you can use rofi theme selector SUPER SHIFT E */
+
+//@theme "~/.config/rofi/themes/KooL_style-4.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
