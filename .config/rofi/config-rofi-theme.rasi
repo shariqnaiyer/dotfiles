@@ -43,8 +43,8 @@ listview {
 
 /* ---- Elements ---- */
 element-icon {
-  size: 24px;
-  margin: 0px 8px 0px 0px;
+  size: 32px;
+  margin: 0px 10px 0px 0px;
 }
 element-text {
   horizontal-align: 0.0;

@@ -17,14 +17,14 @@
 configuration {
   modi: "drun,run,calc,window";
   show-icons: true;
-  icon-theme: "Adwaita";
+  icon-theme: "Papirus";
   display-drun: "";
   display-run: "";
   display-calc: "";
   display-window: "";
   drun-display-format: "{name}";
   window-format: "{t}";
-  font: "JetBrainsMono Nerd Font 13";
+  font: "JetBrainsMono Nerd Font 14";
   case-sensitive: false;
   cycle: true;
   filter: "";
@@ -40,6 +40,10 @@ configuration {
   combi-hide-mode-prefix: false;
   matching: "fuzzy";
   tokenize: true;
+  disable-history: false;
+  sort: false;
+  threads: 0;
+  scroll-method: 0;
 }
 
 /* ---- Global Configuration Fonts ---- */
@@ -51,4 +55,4 @@ configuration {
 //@theme "~/.config/rofi/themes/KooL_style-4.rasi"
 //@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "arc-dark-no-colon"
