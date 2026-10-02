@@ -1,0 +1,6 @@
+# Ghostty -> ~/.config/ghostty/config
+# Reload with cmd+shift+, after editing.
+
+# Send the left option key as alt, so alt+arrow and alt+1..9 reach herdr and
+# tmux instead of typing special characters. Right option still composes.
+macos-option-as-alt = left
