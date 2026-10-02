@@ -76,7 +76,8 @@ It symlinks each file into place and moves anything it replaces to `<name>.bak`.
 | `macos/herdr/config.toml` | `~/.config/herdr/config.toml` |
 | `macos/ghostty/config` | `~/.config/ghostty/config` |
 
-herdr and tmux share one set of keys, with prefix `ctrl+s`. A herdr tab is a
+herdr and tmux share one set of keys, with prefix `ctrl+s`. In Ghostty,
+`cmd+s` sends the same prefix. A herdr tab is a
 tmux window, and a herdr workspace is a tmux session.
 
 | Keys | Action |

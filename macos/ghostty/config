@@ -4,3 +4,7 @@
 # Send the left option key as alt, so alt+arrow and alt+1..9 reach herdr and
 # tmux instead of typing special characters. Right option still composes.
 macos-option-as-alt = left
+
+# cmd+s sends ctrl+s, the herdr and tmux prefix (macos/herdr/config.toml), so
+# the prefix works with cmd (caps lock on this Mac) as well as ctrl.
+keybind = super+s=text:\x13
