@@ -88,6 +88,7 @@ tmux window, and a herdr workspace is a tmux session.
 | `prefix h j k l`, `tab` | move between panes |
 | `prefix z` / `x` | zoom / close pane |
 | `alt+up` / `alt+down` / `alt+1`-`9` | previous / next / nth workspace |
+| `prefix C` (tmux), `prefix shift+c` (herdr) | new tab running `claude --dangerously-skip-permissions` |
 | `prefix f` | [threadr](https://github.com/shariqnaiyer/threadr): find and resume an agent session |
 | `prefix T` (tmux), `prefix shift+t` (herdr) | threadr: fork map |
 

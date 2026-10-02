@@ -88,6 +88,7 @@ alias gs='git status -sb'
 alias gd='git diff'
 alias gl='git log --oneline --graph --decorate -20'
 
+alias c='claude --dangerously-skip-permissions'
 alias py='python3'
 alias venv='uv venv && source .venv/bin/activate'
 alias act='source .venv/bin/activate'
