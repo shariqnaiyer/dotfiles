@@ -71,9 +71,9 @@ type = "shell"
 command = "threadr tree --html"
 description = "threadr: fork map"
 
-# prefix shift+c: a new tab running Claude with permission prompts skipped.
+# prefix shift+c: a new workspace running Claude with permission prompts skipped.
 [[keys.command]]
 key = "prefix+shift+c"
 type = "shell"
-command = 'p=$("${HERDR_BIN_PATH:-herdr}" tab create --cwd "${HERDR_ACTIVE_PANE_CWD:-$PWD}" --label claude --focus | python3 -c "import json,sys; print(json.load(sys.stdin)[\"result\"][\"root_pane\"][\"pane_id\"])") && "${HERDR_BIN_PATH:-herdr}" pane run "$p" "claude --dangerously-skip-permissions"'
-description = "new Claude tab (skip permissions)"
+command = 'p=$("${HERDR_BIN_PATH:-herdr}" workspace create --cwd "${HERDR_ACTIVE_PANE_CWD:-$PWD}" --label claude --focus | python3 -c "import json,sys; print(json.load(sys.stdin)[\"result\"][\"root_pane\"][\"pane_id\"])") && "${HERDR_BIN_PATH:-herdr}" pane run "$p" "claude --dangerously-skip-permissions"'
+description = "new Claude workspace (skip permissions)"
