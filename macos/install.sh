@@ -34,8 +34,6 @@ link zsh/.p10k.zsh       "$HOME/.p10k.zsh"
 link tmux/tmux.conf      "$HOME/.tmux.conf"
 link herdr/config.toml   "$HOME/.config/herdr/config.toml"
 link ghostty/config      "$HOME/.config/ghostty/config"
-# Karabiner watches its directory, not the file, so the whole folder is linked.
-link karabiner           "$HOME/.config/karabiner"
 
 if [ "$DRY_RUN" = 0 ] && command -v herdr >/dev/null; then
   herdr config check && herdr server reload-config >/dev/null 2>&1 || true

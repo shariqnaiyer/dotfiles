@@ -60,7 +60,7 @@ ln -sf ~/dotfiles/.p10k.zsh ~/
 
 ## macOS
 
-`macos/` holds the Mac side: zsh, tmux, [herdr](https://herdr.dev), Ghostty and Karabiner.
+`macos/` holds the Mac side: zsh, tmux, [herdr](https://herdr.dev) and Ghostty.
 
 ```bash
 git clone https://github.com/shariqnaiyer/dotfiles.git ~/Documents/dev/dotfiles
@@ -75,7 +75,6 @@ It symlinks each file into place and moves anything it replaces to `<name>.bak`.
 | `macos/tmux/tmux.conf` | `~/.tmux.conf` |
 | `macos/herdr/config.toml` | `~/.config/herdr/config.toml` |
 | `macos/ghostty/config` | `~/.config/ghostty/config` |
-| `macos/karabiner/` | `~/.config/karabiner/` |
 
 herdr and tmux share one set of keys, with prefix `ctrl+s`. A herdr tab is a
 tmux window, and a herdr workspace is a tmux session.
@@ -93,18 +92,3 @@ tmux window, and a herdr workspace is a tmux session.
 
 Ghostty sends the left option key as alt so the `alt` chords work. Right
 option still types special characters.
-
-### One layout for the MacBook and the HHKB
-
-[Karabiner-Elements](https://karabiner-elements.pqrs.org) makes each physical key
-do the same thing on both keyboards, so Linux muscle memory carries over:
-
-| Physical key | Ghostty / Terminal | Every other app |
-|---|---|---|
-| pinky (MacBook caps lock, HHKB control) | control | command |
-| left thumb (MacBook command, HHKB ◇) | command | control |
-
-In the terminal, `pinky+s` is the herdr/tmux prefix and `pinky+r` searches
-history. Everywhere else, `pinky+c/v/t/w` are the Mac shortcuts, where Linux
-puts control. The MacBook keyboard also gets the HHKB's backspace above
-return. The HHKB should be in Mac mode (DIP switches).
